@@ -89,3 +89,38 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+#past-poll-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    border-radius: 6px;
+}
+
+#current-poll-container {
+    border:solid;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.bottom {
+    margin: 30px;
+}
+
+button {
+    border-radius: 5px;
+    background-color: beige;
+}
+
+input {
+    width: 100px;
+}
+
+#Finish {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+

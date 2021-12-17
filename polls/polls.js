@@ -46,6 +46,8 @@ optionForm.addEventListener('submit', (e) => {
 option1AddButton.addEventListener('click', () => {
     //I incremented the votes for option A 
     currentPoll.votesA++;
+
+    console.log(option1AddButton);
     displayCurrentPollEl();
 });
 option2AddButton.addEventListener('click', () => {
