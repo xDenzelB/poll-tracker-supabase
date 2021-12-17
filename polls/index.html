@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <main>
+        <section class="main-section">
+            <button id="logout">logout</button>
+           <div class="top">
+               <div class="left">
+                <h3>Current Poll</h3>
+                <div id="current-poll-container">
+
+                </div>
+                   <form id="option-form">
+                   <label>
+                       Question:
+                       <input name="question-input" />
+                   </label>
+                   <label>
+                       Option A: 
+                       <input name="option-a" />
+                       
+                   </label>
+                   <label>
+                       Option B: 
+                       <input name="option-b" />
+                       
+                   </label>
+                   <button>Start Poll</button>
+                   </form>
+               </div>
+
+               <div class="right">
+                   <h2 id="current-question"> Question</h2>
+                   <div class="options-a">
+                       <h3 id="option-a-title">Option A</h3>
+                       <p id="option-a-votes"></p>
+                       <button id="add-a-button">
+                       
+                           Vote A
+
+                       </button>
+                       
+                   </div>
+                   <div id="option-b">
+                       <h3 id="option-b-title">Option B</h3>
+                       <p id="option-b-votes"></p>
+                       <button id="add-b-button">Vote B</button>
+                   </div>
+                   <div class="bottom">
+                    <button id="Finish">Finish Poll!</button>
+                   </div>
+                   <div class="border-past">
+                   <div id="past-poll-container">
+
+                   </div>
+                   </div>
+               </div>
+           </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
+    </footer>
+
+    <script type="module" src="./polls.js"></script>
+</body>
+</html>
